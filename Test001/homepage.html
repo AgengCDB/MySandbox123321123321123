@@ -7,9 +7,57 @@
     </head>
 
     <body>
+        <nav>
+            <div class="menu">
+                <a href="#">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="register.html">Register</a> |
+                <a href="#">Sign in</a>
+            </div>
+        </nav>
         <h1>
             Welcome to Test Home Page
         </h1>
+        <hr>
+
+        <audio>
+            <source src="soundtrack.mp3" type="audio/mpeg">
+            <source src="soundtrack.ogg" type="audio/ogg">
+            Your browser does not support the audio formats provided.
+        </audio>
+
+        <canvas>
+            Your browser does not support the canvas tag.
+        </canvas>
+
+        <script>
+            var canvas = document.getElementsByTagName("canvas")[0];
+            var context = canvas.getContext("2d");
+            context.fillRect(0, 0, 500, 500);
+        </script>
+
+        <embed type="text/html" src="mywebpage.html">
+
+        <hr>
+
+        <section>
+            <h1>Section 1</h1>
+            <p>This is text related to section 1.</p>
+        </section>
+        <section>
+            <h1>Section 2</h1>
+            <p>This is some text related to section 2.</p>
+        </section>
+
+        <article>
+            <h1>Article 1</h1>
+            <p>This paragraph is related only to article one and is meaningful on its own, without the rest of the code.</p>
+        </article>
+        <article>
+            <h1>Article 2</h1>
+            <p>This paragraph is related only to article two and is meaningful on its own, without the rest of the code.</p>
+        </article>
+
         <!--
             <hr>: The Thematic Break (Horizontal Rule) element. 
             The <hr> HTML element represents a thematic break 
@@ -55,6 +103,36 @@
                 alert("Date input not supported");
             }
         </script>
+
+        <article>
+            <header>
+                <h1>G8 summit protests</h1>
+            </header>
+            <div>
+                <section id="public">
+                    <h1>Public demonstrations</h1>
+                    <p>...more...</p>                
+                </section>
+                <section id="control">
+                    <h1>Crowd control</h1>
+                    <p>...more...</p>                
+                </section>            
+            </div>
+            <footer>
+                <p>Published today.</p>
+            </footer>
+        </article>
+
+        <figure>
+            <img src="images/hermitcrab.jpg" width="500" height="500"/>
+            <figcaption>IBM Developer Skills Network Logo</figcaption>
+        </figure>
+
+        <p>This is a paragraph of text that casually mentions a concept and continues explaining the main point</p>
+        <aside>
+            <h4>Concept Definition</h4>
+            <p>This goes over the concept mentioned in the paragraph to provide readers with further explanation if needed. However, it does not detract from the main content.</p>
+        </aside>
 
         <hr>
         <footer>
